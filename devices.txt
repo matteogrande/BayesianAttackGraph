@@ -1,0 +1,15 @@
+Attacker - P = 0.60
+Firewall 1 - Fortinet - CVE-2022-26122 - P = 0.99
+Web Server - Windows Server 2003 - CVE-2017-0176 - P = 0.57
+Email Server - Windows Server 2003 - CVE-2012-5364 - P = 0.99
+Authentication Server - Windows Vista - CVE-2018-7250 - P = 0.47
+Business Server - Windows Server 2008 - CVE-2024-35250 - P = 0.47
+Firewall 2 - Checkpoint - CVE-2014-7169 - P = 0.99
+Application Server - Windows XP - CVE-2020-7484 - P = 0.99
+Historian - Cisco Ultra - CVE-2017-6768 - P = 0.72
+Firewall 3 - Palo Alto - CVE-2021-3040 - P = 0.31
+Firewall 4 - Palo Alto - CVE-2021-3035 - P = 0.31
+Local HMI 1 - Movicon - CVE-2017-14019 - P = 0.20
+Local HMI 2 - Movicon - CVE-2017-14017 - P = 0.47
+PLC 1 - Siemens SIMATICS S7 - CVE-2021-37205 - P = 0.99
+PLC 2 - Modicon M221 - CVE-2020-28214 - P = 0.47
