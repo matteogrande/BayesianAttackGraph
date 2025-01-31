@@ -14,16 +14,14 @@ def analyze_model(model):
     
     # 2. Variazione della probabilità dell'attaccante e impatto sui PLC
     print("\nEffetto della probabilità dell'Attacker sulla compromissione dei PLC:")
-    attacker_probs = [0.2, 0.4, 0.6, 0.8, 1.0]
-    for p in attacker_probs:
-        attacker_evidence = {"Attacker": "Present"}
+    attacker_evidence = {"Attacker": "Present"}
         
-        plc1_given_attacker = inference.query(variables=["PLC 1"], evidence=attacker_evidence, show_progress=False)
-        plc2_given_attacker = inference.query(variables=["PLC 2"], evidence=attacker_evidence, show_progress=False)
+    plc1_given_attacker = inference.query(variables=["PLC 1"], evidence=attacker_evidence, show_progress=False)
+    plc2_given_attacker = inference.query(variables=["PLC 2"], evidence=attacker_evidence, show_progress=False)
         
-        print(f"\nP(Attacker=Present) = {p}")
-        print(plc1_given_attacker)
-        print(plc2_given_attacker)
+    print(f"\nP(Attacker=Present) = 0.6")
+    print(plc1_given_attacker)
+    print(plc2_given_attacker)
     
     # 3. Inferenza diagnostica: dato che un PLC è compromesso, qual è la probabilità che un firewall sia compromesso?
     print("\nInferenza diagnostica: probabilità che Firewall 3 sia compromesso dato che PLC 1 è compromesso")
